@@ -19,58 +19,58 @@ buildDrafts = "true"
 disableFastRender = true
 # --------------------------------------------------------------------------
 
-disqusShortname = "your disqus short name"
-googleAnalytics = "your ga id"
+disqusShortname = "Yag"
+googleAnalytics = " "
 
 # social link in the footer, change it to "" hide it
 [social]
-    github = " "
-    facebook = " "
-    twitter = " "
-    behance = " "
-    email = " "
+    github = ""
+    facebook = ""
+    twitter = ""
+    behance = ""
+    email = ""
 
 # author, title, description are used in the home page, you can embed html tag in description
 [params]
     # will use AuthorName if you leave it blank, but you can set it to arbitrary text
     author = "Yag"
     title = "Yag Blog"
-    description = "A hugo site using Edidor. <br/><br/> Ctrl+B toggle sidebar. "
+    description = "私人筆記用"
     # change it to false if you don't need syntax highlighting, and save a little bandwidth
     isHighlightCode = true
     # set true need to use custom js
     useCustomSyntaxHighlight = true
-    customJs = []
+    customJs = ["hightlight.js"]
     customCss = []
     mode = "light"
 # menubar setting, you can change url, weight and name except the 'Theme'.
 [[menu.main]]
-    name = "文章"
+    name = "Article"
     url = "#"
     weight = 10
 [[menu.main]]
-    name = "顯示"
+    name = "View"
     url = "#"
     weight = 10
 # You can change the name, but please don't edit the identifier
 [[menu.main]]
-    parent = "顯示"
+    parent = "View"
     identifier = "toggle-sidebar"
     name = "切換側邊欄"
     url = "#"
     weight = 10
 [[menu.main]]
-    parent = "文章"
+    parent = "Article"
     name = "主題式"
     url = "/posts"
     weight = 1
 [[menu.main]]
-    parent = "文章"
+    parent = "Article"
     name = "標籤"
     url = "/tags"
     weight = 20
 [[menu.main]]
-    parent = "文章"
+    parent = "Article"
     name = "分類"
     url = "/categories"
     weight = 20
